@@ -1,26 +1,31 @@
-// Import required modules
+// src/index.js
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
-const path = require('path');
+const path = require("path");
+const jobs=require('./jobs');
+
+
+console.log(jobs)
 
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));  // Make sure views folder is here
 
-// Middleware to parse URL-encoded data (for forms)
-app.use(bodyParser.urlencoded({ extended: true }));
-
-// Serve static files (like images, CSS, JS) from the 'public' directory
-app.use(express.static("public"));
-
-// Define routes
+// Middleware to serve static files (CSS, images, etc.)
+app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.get('/hello', function(req, res) {
-    res.send("hello world..!");
+// Define a route
+app.get('/', function(req, res) {
+  res.render('index.ejs');  // Render an EJS view (index.ejs should be in the 'views' folder)
 });
+
+// app.get('/index',function(req,res){
+//     res.render("index.ejs");
+// })
+
 
 // Start the server
 app.listen(3000, () => {
-    console.log('Server is running on http://localhost:3000');
+  console.log('Server is running on http://localhost:3000');
 });
