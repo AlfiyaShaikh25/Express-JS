@@ -1,0 +1,12 @@
+#carouselExample img{
+         height: 300px;
+         margin-top: 10px;
+          border-radius: 5px;
+          object-fit: cover;
+          width: 100%;
+}
+
+
+.search_input{
+    background-color: white !important;
+}

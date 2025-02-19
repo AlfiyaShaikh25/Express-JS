@@ -1,151 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express js project</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="nav" style="width: 50px;">
-        <img src="career.png" alt="helllo">
-        <span>Wai Career</span>
+    <!-- navbar -->
+    <nav class="navbar  navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" display="inline">
+                <img src="icone3.png " alt="icone" style="border-radius: 50px; height: 30px;;">
+
+                Coders Bolg</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Full stack</a></li>
+                            <li><a class="dropdown-item" href="#">Flutter</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Java</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="search_input form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                    <button class="btn btn-outline-success  me-2" type="submit">Search</button>
+
+
+                </form>
+                <button class="btn btn-danger me-2" type="submit">Login</button>
+                <button class="btn btn-success " type="submit">SignUp</button>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- image slider -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="slider1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="slider2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="slider3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+    <!-- div row -->
+    <div class="container marketing mt-5" >
 
-    <img src="navimg (2).jpg" alt="" style="width: 100%; height: 300px;">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="heading1.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="heading2.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="heading3.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
 
-    <div>
-        <h2>About Wai</h2>
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="heading1.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="heading2.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="heading3.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+     
+      </div>
+
     </div>
-    <div class="main-containt">
-        <p>Sure! Here's a more cohesive paragraph about career:
-
-            Sure! Here's an expanded version with a few more lines:
-
-            Career development is an ongoing journey that requires continuous learning, adaptability, and strategic
-            planning. Whether you're just starting out or are already an established professional, it's essential to
-            stay updated with new skills and industry trends. Taking courses or certifications can enhance your
-            knowledge and make you more competitive in the job market. Networking also plays a crucial role, as building
-            strong professional relationships can open doors to new opportunities. Equally important is maintaining a
-            healthy work-life balance—burnout can be detrimental to both your career and personal well-being. Regularly
-            setting clear goals and being adaptable to changes in the workplace will help you stay focused and
-            resilient. Embracing new challenges and changes can help you grow both personally and professionally
-            throughout your career. It’s important to remember that career success is not a straight line—it’s filled
-            with ups and downs, and each step is a learning experience. Stay curious, stay open-minded, and keep pushing
-            forward as you evolve in your professional path.</p>
-        <img src="team (1).jpg">
-
-    </div>
-
-    <div>
-    <h2>Job Opportunities</h2>
-
-
-
-    <table id="jobs-table">
-        <tr class="jobs-header-row">
-            <th>Job Title</th>
-            <th>Location</th>
-            <th>Salary</th>
-            <th>Posted On</th>
-        </tr>
-        <tr class="jobs-data-row">
-            <td>Frontend Developer</td>
-            <td>Bengaluru, India</td>
-            <td>₹12,00,000</td>
-            <td>Mar 3, 2023</td>
-        </tr>
-        <tr class="jobs-data-row">
-            <td>Full Stack Developer</td>
-            <td>New Delhi, India</td>
-            <td>₹15,00,000</td>
-            <td>Feb 1, 2023</td>
-        </tr>
-        <tr class="jobs-data-row">
-            <td>Data Scientist</td>
-            <td>San Francisco, USA</td>
-            <td>$175,000</td>
-            <td>Dec 22, 2022</td>
-        </tr>
-        <tr class="jobs-data-row">
-            <td>ML Engineer</td>
-            <td>Remote</td>
-            <td>$80,000</td>
-            <td>Sep 19, 2022</td>
-        </tr>
-    </table>
-</div>
-
-<div id=" Application_form">
-    <h2>Submit Your Application</h2>
-    <div id="div-form">
-        <form id="form">
-            <div class="div-flex">
-                <div id="form_group">
-                    <label for="name">Name</label><br>
-                    <input name="name" id="name" type="text" required placeholder="Naina Ranade " />
-                </div>
-                <div id="form_group">
-                    <label for="e-mail">Email</label><br>
-                    <input name="e-mail" id="e-mail" type="email" required placeholder="naina@44gmail.com" />
-                </div>
-            </div>
-            <div class="div-flex">
-                <div id="form_group">
-                    <label for="phone">Phone No</label><br>
-                    <input name="phone" id="phone" type="number" required placeholder="+919876578965" />
-                </div>
-    
-                <div id="form_group">
-                    <label for="date">Appointment Time</label><br>
-                    <input name="dob" id="dob" type="date" required />
-                </div>
-            </div>
-            <div class="div-flex">
-                <div id="form_group">
-                    <label for="services">Select Skills</label><br>
-                    <select id="service-selected" name="Service Setected" required>
-                        <option value="">Select Skills</option>
-                        <option value="Menicure">Android</option>
-                        <option value="pedicure">Java</option>
-                        <option value="Massage">Full stack</option>
-                        <option value="Facial">flutter</option>
-                    </select>
-                </div>
-                <div id="form_group">
-                    <label for="file">Select Resume</label><br>
-                    <input name="file" id="file" type="file" required />
-                </div>
-            </div>
-            <div id="form_group">
-                <label for="text_area">Description</label><br>
-                <textarea name="text-area" id="textarea" rows="5" cols="50" type="text" required placeholder="Description"></textarea>
-            </div>
-            <div id="form_group">
-                <label for="terms and condition">
-                    <input name="check_box" id="checkbox" type="checkbox" required>
-                    Agree with terms and conditions
-                </label>
-            </div>
-            <div id="form_group_button">
-                <input class="forminput" type="submit" value="Submit">
-            </div>
-        </form>
-    </div>
-    
-</div>
-    
-    
-    
-
+    <footer class="container">
+        <p class="float-right"><a href="">Back to top</a></p>
+        <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
